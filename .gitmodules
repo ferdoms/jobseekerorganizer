@@ -1,0 +1,9 @@
+[submodule "jso-account-ms"]
+	path = jso-account-ms
+	url = https://github.com/ferdoms/jso-account-ms
+[submodule "jso-jobapplication-ms"]
+	path = jso-jobapplication-ms
+	url = https://github.com/ferdoms/jso-jobapplication-ms
+[submodule "jso-frontend"]
+	path = jso-frontend
+	url = https://github.com/ferdoms/jso-frontend

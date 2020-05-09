@@ -1,0 +1,52 @@
+version: "3"
+
+services:
+  server:
+    build: ./server/
+    ports:
+      - 80:80
+    depends_on:
+      - frontend
+      - accountms
+
+  frontend:
+    build: ./jso-frontend/
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_ACCOUNT_API=localhost:80
+      - REACT_APP_JOBAPPLICATION_API=localhost:80
+
+  accountms:
+    build: ./jso-account-ms/
+    ports:
+      - 8080:8080
+    links:
+      - database
+    depends_on:
+      - database
+    environment:
+      - AWS_DYNAMODB_HOST=http://database:8000
+      - REDIS_HOST=redis
+
+  jobapplicationms:
+    build: ./jso-jobapplication-ms/
+    ports:
+      - 8081:8081
+    links:
+      - database
+    depends_on:
+      - database
+    environment:
+      - AWS_DYNAMODB_HOST=http://database:8000
+      - REDIS_HOST=redis
+
+  database:
+    image: amazon/dynamodb-local
+    ports:
+      - 8000:8000
+
+  redis:
+    image: redis
+    ports:
+      - 6379:6379

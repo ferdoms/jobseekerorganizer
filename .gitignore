@@ -1,0 +1,111 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+### FRONTEND ###
+# dependencies
+/jsofrontend/node_modules
+/jsofrontend/.pnp
+/jsofrontend/.pnp.js
+
+# testing
+/jsofrontend/coverage
+
+# production
+/jsofrontend/build
+
+# misc
+/jsofrontend/.DS_Store
+/jsofrontend/.env.local
+/jsofrontend/.env.development.local
+/jsofrontend/.env.test.local
+/jsofrontend/.env.production.local
+
+/jsofrontend/npm-debug.log*
+/jsofrontend/yarn-debug.log*
+/jsofrontend/yarn-error.log*
+
+/jsofrontend/docker-compose.yml
+
+
+
+### jso-account-ms ###
+### Eclipse ###
+/jso-account-ms/HELP.md
+/jso-account-ms/target/
+/jso-account-ms/!.mvn/wrapper/maven-wrapper.jar
+/jso-account-ms/!**/src/main/**
+/jso-account-ms/!**/src/test/**
+
+### STS ###
+/jso-account-ms/.apt_generated
+/jso-account-ms/.classpath
+/jso-account-ms/.factorypath
+/jso-account-ms/.project
+/jso-account-ms/.settings
+/jso-account-ms/.springBeans
+/jso-account-ms/.sts4-cache
+
+### IntelliJ IDEA ###
+/jso-account-ms/.idea
+/jso-account-ms/*.iws
+/jso-account-ms/*.iml
+/jso-account-ms/*.ipr
+
+### NetBeans ###
+/jso-account-ms/nbproject/private/
+/jso-account-ms/nbbuild/
+/jso-account-ms/dist/
+/jso-account-ms/nbdist/
+/jso-account-ms/.nb-gradle/
+/jso-account-ms/build/
+
+### VS Code ###
+/jso-account-ms/.vscode/
+
+## DEV ##
+/jso-account-ms/docker-compose.yml
+
+
+
+### jso-jobapplication-ms ###
+### Eclipse ###
+/jso-jobapplication-ms/HELP.md
+/jso-jobapplication-ms/target/
+/jso-jobapplication-ms/!.mvn/wrapper/maven-wrapper.jar
+/jso-jobapplication-ms/!**/src/main/**
+/jso-jobapplication-ms/!**/src/test/**
+
+### STS ###
+/jso-jobapplication-ms/.apt_generated
+/jso-jobapplication-ms/.classpath
+/jso-jobapplication-ms/.factorypath
+/jso-jobapplication-ms/.project
+/jso-jobapplication-ms/.settings
+/jso-jobapplication-ms/.springBeans
+/jso-jobapplication-ms/.sts4-cache
+
+### IntelliJ IDEA ###
+/jso-jobapplication-ms/.idea
+/jso-jobapplication-ms/*.iws
+/jso-jobapplication-ms/*.iml
+/jso-jobapplication-ms/*.ipr
+
+### NetBeans ###
+/jso-jobapplication-ms/nbproject/private/
+/jso-jobapplication-ms/nbbuild/
+/jso-jobapplication-ms/dist/
+/jso-jobapplication-ms/nbdist/
+/jso-jobapplication-ms/.nb-gradle/
+/jso-jobapplication-ms/build/
+
+### VS Code ###
+/jso-jobapplication-ms/.vscode/
+
+
+
+## jso-uploadFile-lambda ##
+/jso-uploadFile-lambda
+
+
+
+/.metadata
