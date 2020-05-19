@@ -98,6 +98,8 @@
 /jso-jobapplication-ms/.nb-gradle/
 /jso-jobapplication-ms/build/
 
+/jso-jobapplication-ms/docker-compose.yml
+
 ### VS Code ###
 /jso-jobapplication-ms/.vscode/
 
