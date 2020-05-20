@@ -22,7 +22,8 @@ function build {
     mvn package -DskipTests > /dev/null
     echo "jso-jobapplication-ms: OK"
     echo    
-
+	
+    cd $src
     echo " - Building docker-compose:"
     (docker-compose build) > /dev/null
     echo "   OK"
